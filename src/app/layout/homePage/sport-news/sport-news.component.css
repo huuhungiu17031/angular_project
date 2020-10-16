@@ -1,0 +1,54 @@
+.box-hd-title {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-top: 10px;
+    background: #fff;
+}
+
+h2.title:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    border-top: 22px solid transparent;
+    border-left: 15px solid #383838;
+    border-right: 0 solid transparent;
+    border-bottom: 23px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+
+.title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 45px;
+    color: #fff;
+    float: left;
+    padding: 0 8px 0 12px;
+    height: 45px;
+    background: #383838;
+    border-radius: 4px 0 0 4px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.card {
+    margin: 0 5px;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.card-content {
+    color: rgb(137, 137, 137)!important;
+}

@@ -1,0 +1,26 @@
+<!-- <div *ngIf="status">
+    Cybersoft
+</div>
+
+
+<button (click)="hidden()">Hide</button>
+<button (click)="show()">Show</button> -->
+
+
+<div *ngIf="status; else templateChuaDangNhap">
+    <button class="btn btn-outline-dark" (click)="dangXuat()">Đăng xuất</button>
+    <h5>Xin chào cybersoft</h5>
+</div>
+
+<ng-template #templateChuaDangNhap>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="text" class="form-control" name='username' #username>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="text" class="form-control" name="password" #password>
+    </div>
+    <h1>CHưa đang nhập</h1>
+    <button type="submit" class="btn btn-success" (click)="dangNhap(username.value,password.value)">Submit</button>
+</ng-template>

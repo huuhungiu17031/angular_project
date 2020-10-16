@@ -1,0 +1,31 @@
+.zoom-poster img {
+    transition: all 0.4s
+}
+
+.zoom-poster:hover img {
+    transform: translateY(-5px);
+}
+
+.icon-hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-hover img {
+    transition: all 0.4s;
+    padding-top: 1px;
+}
+
+.icon-hover:hover img {
+    transform: rotateY(180deg)
+}
+
+.icon-hover p {
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.icon-hover:hover p {
+    color: yellow;
+}

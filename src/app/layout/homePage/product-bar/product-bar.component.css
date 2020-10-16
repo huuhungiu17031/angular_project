@@ -1,0 +1,20 @@
+.product-bar {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.product-bar li {
+    display: block;
+    width: 14%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.product-bar li:hover {
+    box-shadow: 0 15px 10px #777;
+}

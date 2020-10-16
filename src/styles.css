@@ -1,1 +1,128 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.bg-change {
+    background-color: rgb(245, 245, 245);
+}
+
+.box-hd-title {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-top: 10px;
+    background: #fff;
+}
+
+.box-hd-title h2.title:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    border-top: 22px solid transparent;
+    border-left: 15px solid #383838;
+    border-right: 0 solid transparent;
+    border-bottom: 23px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+
+.box-hd-title .title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 45px;
+    color: #fff;
+    float: left;
+    padding: 0 8px 0 12px;
+    height: 45px;
+    background: #383838;
+    border-radius: 4px 0 0 4px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.item {
+    margin: 0 5px;
+}
+
+.card {
+    transition: all 0.5s;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 10px 15px 10px #777;
+}
+
+.card>div {
+    position: relative;
+}
+
+.card .card-body p {
+    color: rgb(251, 174, 64);
+    font-weight: bold;
+}
+
+.card-controller {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s;
+}
+
+.card:hover .card-controller {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.shopping-cart {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-controller .row {
+    height: 100%;
+    cursor: pointer;
+}
+
+.card-controller .col-9,
+.card-controller .col-3 {
+    padding: 8px 0;
+    transition: all 0.5s;
+}
+
+.card-controller .col-9:hover,
+.card-controller .col-3:hover {
+    background-color: #fbae40;
+}
+
+.shopping-cart p {
+    margin: 0;
+}
+
+.col-3 {
+    text-align: center;
+}

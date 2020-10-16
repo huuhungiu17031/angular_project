@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="box-hd-title my-3">
+        <a href="" title="Top sản phẩm bán chạy">
+            <h2 class="title">
+                Tăng sức đề kháng chống N-Covid 19
+
+            </h2>
+        </a>
+        <div class="owl-theme">
+            <div class="owl-controls">
+                <div id="customNav" class="owl-nav"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class='container'>
+    <owl-carousel [options]="SlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+        <div class="item" *ngFor="let item of Info">
+            <div class="card">
+
+                <div>
+                    <img class="card-img-top img-fluid" src={{item.image}} alt="">
+                    <div class="card-controller">
+                        <div class="row m-0">
+                            <div class="col-9">
+                                <div class="shopping-cart">
+                                    <i class="fas fa-shopping-cart mr-2"></i>
+                                    <p>Thêm vào giỏ</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="eye">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body text-center">
+                    <h4 class="card-title">{{item.title}}</h4>
+                    <p class="card-text ">{{item.price}}₫</p>
+                </div>
+            </div>
+        </div>
+    </owl-carousel>
+</div>

@@ -1,0 +1,72 @@
+.sub-menu {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sub-menu ul {
+    margin: 0;
+}
+
+.sub-menu ul li {
+    display: inline-block;
+    margin-right: 10px
+}
+
+.sub-menu ul li:nth-child(1) a {
+    color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sub-menu ul li:nth-child(1) i {
+    animation: mymove ease-in infinite;
+}
+
+.sub-menu ul li:nth-child(2) a {
+    color: rgb(252, 193, 108);
+    text-decoration: none;
+}
+
+.vip-customer a {
+    display: block;
+    padding: 10px 20px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.vip-customer a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 17.5px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 17.5px solid transparent;
+    border-left: 15px solid #fff;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(250, 174, 64);
+    border-radius: 50%;
+}
+
+@keyframes mymove {
+    from {
+        transform: scale(1);
+        color: red;
+    }
+    to {
+        transform: scale(1.1);
+        color: black;
+    }
+}

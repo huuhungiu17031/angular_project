@@ -25,6 +25,7 @@ import { ComboProductComponent } from './combo-product/combo-product.component';
 import { IncreaseWeightComponent } from './increase-weight/increase-weight.component';
 import { SportNewsComponent } from './sport-news/sport-news.component';
 import { FooterPromotionComponent } from './footer-promotion/footer-promotion.component';
+import { ProductItemComponent } from './product-item/product-item.component';
 
 
 
@@ -44,6 +45,7 @@ import { FooterPromotionComponent } from './footer-promotion/footer-promotion.co
     IncreaseWeightComponent,
     SportNewsComponent,
     FooterPromotionComponent,
+    ProductItemComponent,
   ],
   imports: [
     CommonModule,
@@ -63,7 +65,7 @@ import { FooterPromotionComponent } from './footer-promotion/footer-promotion.co
     IncreaseWeightComponent,
     SportNewsComponent,
     FooterPromotionComponent,
-
+    ProductItemComponent,
   ]
 })
 export class HomePageModule { }

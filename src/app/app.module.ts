@@ -10,13 +10,11 @@ import { HomePageModule } from './layout/homePage/homePage.module';
 import {OneWayBindingModule} from './one-way-binding/one-way-binding.module'
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProductItemComponent } from './product-item/product-item.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductItemComponent,
   
   ],
   imports: [
